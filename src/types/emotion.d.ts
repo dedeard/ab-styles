@@ -1,5 +1,5 @@
 import '@emotion/react';
-import { colors } from '../config';
+import colors from '../config/colors';
 
 export type Breakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
