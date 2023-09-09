@@ -1,11 +1,11 @@
 {
-  "name": "@mverissimoo/emotion-grid",
+  "name": "@dedeard/ab-styles",
   "version": "1.0.0",
-  "main": "dist/emotion-grid.cjs.js",
-  "module": "dist/emotion-grid.esm.js",
-  "types": "dist/emotion-grid.cjs.d.ts",
-  "repository": "git@github.com:mverissimo/emotion-grid.git",
-  "author": "Matheus Verissimo <mverissimoo@hotmail.com>",
+  "main": "dist/ab-styles.cjs.js",
+  "module": "dist/ab-styles.esm.js",
+  "types": "dist/ab-styles.cjs.d.ts",
+  "repository": "git@github.com:dedeard/ab-styles.git",
+  "author": "Dede ard <me@dedeard.my.id>",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
