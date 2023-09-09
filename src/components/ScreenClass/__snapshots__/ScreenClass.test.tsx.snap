@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ScreenClass should render with current screen %s 1`] = `
-<div>
-  xl
-</div>
-`;

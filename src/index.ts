@@ -24,5 +24,3 @@ export type { VisibleProps } from './components/Visible';
 
 export { ScreenClass } from './components/ScreenClass';
 export type { ScreenClassProps } from './components/ScreenClass';
-
-export { Debugger } from './components/Debugger';

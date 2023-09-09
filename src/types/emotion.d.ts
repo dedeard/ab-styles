@@ -1,4 +1,5 @@
 import '@emotion/react';
+import { colors } from '../config';
 
 export type Breakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
@@ -37,15 +38,12 @@ export interface JustifyProps {
 
 export interface DefaultTheme {
   grid?: {
+    space: number;
     container: Record<Breakpoints, number | string>;
-    padding: Record<Breakpoints, number>;
     columns: Record<Breakpoints, number>;
-    gutter: Record<Breakpoints, number>;
     breakpoints: Record<Breakpoints, number>;
-    colors: {
-      blue: string;
-    };
   };
+  colors?: typeof colors;
 }
 export interface StyleProps {
   theme: DefaultTheme;

@@ -17,13 +17,8 @@ export const base = ({ theme }: StyleProps) => css`
 
   box-sizing: border-box;
 
-  ${responsive(
-    config(theme).grid.breakpoints,
-    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
-      padding-left: ${config(theme).grid.gutter[breakpoint] / 2}rem;
-      padding-right: ${config(theme).grid.gutter[breakpoint] / 2}rem;
-    `
-  )};
+  padding-left: ${config(theme).grid.space / 2}rem;
+  padding-right: ${config(theme).grid.space / 2}rem;
 `;
 
 export const size = (props: ColProps & StyleProps) =>

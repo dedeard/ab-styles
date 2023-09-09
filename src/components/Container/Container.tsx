@@ -12,11 +12,6 @@ export interface ContainerProps {
   fluid?: boolean;
 
   /**
-   * Enable a background, to visual debug
-   */
-  debug?: boolean;
-
-  /**
    * The ref to the HTML DOM element
    */
   ref?: Ref<HTMLDivElement>;
@@ -27,11 +22,7 @@ export interface ContainerProps {
   children: ReactNode;
 }
 
-const ContainerEl = styled('div')<ContainerProps>(
-  styles.base,
-  styles.fluid,
-  styles.debug
-);
+const ContainerEl = styled('div')<ContainerProps>(styles.base, styles.fluid);
 
 const Container = React.forwardRef(
   (props: ContainerProps, ref?: ContainerProps['ref']) => {

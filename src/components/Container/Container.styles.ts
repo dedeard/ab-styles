@@ -17,13 +17,8 @@ export const base = ({ theme }: StyleProps) => css`
 
   box-sizing: border-box;
 
-  ${responsive(
-    config(theme).grid.breakpoints,
-    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
-    padding-left: ${config(theme).grid.padding[breakpoint] / 2}rem;
-    padding-right: ${config(theme).grid.padding[breakpoint] / 2}rem;
-`
-  )}
+  padding-left: ${config(theme).grid.space / 2}rem;
+  padding-right: ${config(theme).grid.space / 2}rem;
 `;
 
 export const fluid = ({ theme, fluid }: ContainerProps & StyleProps) =>
@@ -37,21 +32,3 @@ export const fluid = ({ theme, fluid }: ContainerProps & StyleProps) =>
       max-width: ${config(theme).grid.container[breakpoint]}rem;
     `
   );
-
-export const debug = ({ theme, debug }: ContainerProps & StyleProps) => {
-  return (
-    debug &&
-    css`
-      .EmotionGrid-Row {
-        label: row--debug;
-        background: ${config(theme).grid.colors.blue}0D;
-      }
-
-      .EmotionGrid-Col {
-        label: col--debug;
-        background: ${config(theme).grid.colors.blue}0D;
-        border: 1px solid ${config(theme).grid.colors.blue};
-      }
-    `
-  );
-};

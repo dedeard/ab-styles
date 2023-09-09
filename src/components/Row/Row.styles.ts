@@ -14,13 +14,8 @@ export const base = ({ theme }: StyleProps) => css`
 
   box-sizing: border-box;
 
-  ${responsive(
-    config(theme).grid.breakpoints,
-    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
-      margin-left: -${config(theme).grid.gutter[breakpoint] / 2}rem;
-      margin-right: -${config(theme).grid.gutter[breakpoint] / 2}rem;
-    `
-  )};
+  margin-left: -${config(theme).grid.space / 2}rem;
+  margin-right: -${config(theme).grid.space / 2}rem;
 `;
 
 export const align = ({ theme, align }: RowProps & StyleProps) =>
