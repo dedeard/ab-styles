@@ -1,9 +1,9 @@
 {
   "name": "@ajarbelajar/styles",
   "version": "1.0.0",
-  "main": "dist/ab-styles.cjs.js",
-  "module": "dist/ab-styles.esm.js",
-  "types": "dist/ab-styles.cjs.d.ts",
+  "main": "dist/ajarbelajar-styles.cjs.js",
+  "module": "dist/ajarbelajar-styles.esm.js",
+  "types": "dist/ajarbelajar-styles.cjs.d.ts",
   "repository": "git@github.com:dedeard/ab-styles.git",
   "author": "Dede ard <me@dedeard.my.id>",
   "license": "MIT",
