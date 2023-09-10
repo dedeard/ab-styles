@@ -1,5 +1,5 @@
 {
-  "name": "@dedeard/ab-styles",
+  "name": "@ajarbelajar/styles",
   "version": "1.0.0",
   "main": "dist/ab-styles.cjs.js",
   "module": "dist/ab-styles.esm.js",
