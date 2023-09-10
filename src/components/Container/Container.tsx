@@ -26,9 +26,7 @@ const ContainerEl = styled('div')<ContainerProps>(styles.base, styles.fluid);
 
 const Container = React.forwardRef(
   (props: ContainerProps, ref?: ContainerProps['ref']) => {
-    return (
-      <ContainerEl ref={ref} className="EmotionGrid-Container" {...props} />
-    );
+    return <ContainerEl ref={ref} className="grid-container" {...props} />;
   }
 );
 

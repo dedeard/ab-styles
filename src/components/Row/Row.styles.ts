@@ -7,8 +7,6 @@ import type { RowProps } from '.';
 import { DefaultTheme, StyleProps } from '../../types/emotion';
 
 export const base = ({ theme }: StyleProps) => css`
-  label: row;
-
   display: flex;
   flex-wrap: wrap;
 
@@ -25,12 +23,10 @@ export const align = ({ theme, align }: RowProps & StyleProps) =>
         (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
           align[breakpoint] &&
           `
-            label: row--align;
             align-items: ${align[breakpoint]};
           `
       )
     : css`
-        label: row--align;
         align-items: ${align};
       `;
 
@@ -41,12 +37,10 @@ export const justify = ({ theme, justify }: RowProps & StyleProps) =>
         (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
           justify[breakpoint] &&
           `
-            label: row--justify;
             justify-content: ${justify[breakpoint]};
           `
       )
     : css`
-        label: row--justify;
         justify-content: ${justify};
       `;
 
@@ -56,22 +50,19 @@ export const reverse = ({ theme, reverse }: RowProps & StyleProps) =>
     ? responsive(
         config(theme).grid.breakpoints,
         (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
-          label: row--reverse;
           flex-direction: ${
             reverse.includes(breakpoint) ? 'row-reverse' : 'row'
           };
         `
       )
     : css`
-        label: row--reverse;
         flex-direction: row-reverse;
       `);
 
 export const noGutter = ({ noGutters }: RowProps) =>
   noGutters &&
   css`
-    .EmotionGrid-Col {
-      label: col--no-gutters;
+    .grid-col {
       padding-left: 0;
       padding-right: 0;
     }

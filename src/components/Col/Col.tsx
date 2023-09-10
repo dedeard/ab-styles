@@ -39,7 +39,7 @@ const ColEl = styled('div', {
 })<ColProps>(styles.base, styles.size, styles.offset);
 
 const Col = React.forwardRef((props: ColProps, ref?: ColProps['ref']) => {
-  return <ColEl ref={ref} className="EmotionGrid-Col" {...props} />;
+  return <ColEl ref={ref} className="grid-col" {...props} />;
 });
 
 export default Col;

@@ -7,8 +7,6 @@ import type { ColProps } from '.';
 import type { DefaultTheme, StyleProps } from '../../types/emotion';
 
 export const base = ({ theme }: StyleProps) => css`
-  label: col;
-
   position: relative;
   flex: 1 0 0%;
 
@@ -27,7 +25,6 @@ export const size = (props: ColProps & StyleProps) =>
     (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
       props[breakpoint] &&
       `
-        label: col--size;
         flex: 0 0 ${
           (props[breakpoint] / config(props.theme).grid.columns[breakpoint]) *
           100
@@ -46,7 +43,6 @@ export const offset = ({ theme, offset }: ColProps & StyleProps) =>
     (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
       offset[breakpoint] &&
       `
-        label: col--offset;
         margin-left: ${
           offset[breakpoint] >= 0
             ? (offset[breakpoint] / config(theme).grid.columns[breakpoint]) *

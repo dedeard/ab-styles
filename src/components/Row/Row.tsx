@@ -54,7 +54,7 @@ const RowEl = styled('div')<RowProps>(
 );
 
 const Row = React.forwardRef((props: RowProps, ref?: RowProps['ref']) => {
-  return <RowEl ref={ref} className="EmotionGrid-Row" {...props} />;
+  return <RowEl ref={ref} className="grid-row" {...props} />;
 });
 
 export default Row;

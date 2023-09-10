@@ -7,8 +7,6 @@ import { ContainerProps } from '.';
 import type { DefaultTheme, StyleProps } from '../../types/emotion';
 
 export const base = ({ theme }: StyleProps) => css`
-  label: container;
-
   width: 100%;
   max-width: 100%;
 
@@ -28,7 +26,6 @@ export const fluid = ({ theme, fluid }: ContainerProps & StyleProps) =>
     (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
       typeof config(theme).grid.container[breakpoint] === 'number' &&
       `
-      label: container--fluid;
       max-width: ${config(theme).grid.container[breakpoint]}rem;
     `
   );
