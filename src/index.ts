@@ -1,6 +1,7 @@
 export * from './utils';
 export { config, colors, grid } from './config';
 export type { Colors, Grid } from './config';
+export type { DefaultTheme, StyleProps } from './types/emotion';
 
 /**
  * Components
