@@ -29,3 +29,5 @@ export const colors = {
 };
 
 export default colors;
+
+export type Colors = typeof colors;

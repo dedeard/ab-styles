@@ -11,7 +11,7 @@ function isTheme(args: ThemeArgs): args is Theme {
 export const getTheme = (args: ThemeArgs): Theme =>
   isTheme(args) ? args : args.theme;
 
-function config(props: ThemeArgs = {}): DefaultTheme {
+function config(props: ThemeArgs = DEFAULT_CONFIG): DefaultTheme {
   const theme = getTheme(props);
 
   return {

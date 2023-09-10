@@ -1,8 +1,8 @@
-import { config, BREAKPOINTS } from '../config';
+import { config, DEFAULT_CONFIG, BREAKPOINTS } from '../config';
 import { DefaultTheme } from '../types/emotion';
 
 export function getBreakpoint(
-  props: DefaultTheme = {}
+  props: DefaultTheme = DEFAULT_CONFIG
 ): keyof DefaultTheme['grid']['breakpoints'] {
   let screen;
 

@@ -1,5 +1,6 @@
 export * from './utils';
-export { config } from './config';
+export { config, colors, grid } from './config';
+export type { Colors, Grid } from './config';
 
 /**
  * Components
